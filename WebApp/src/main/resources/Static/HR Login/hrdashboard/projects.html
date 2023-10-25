@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../emplist.css">
+
+</head>
+
+<body class="body">
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-md gradient-bg" id="nav">
+        <!-- Logo and Menu Toggle Button -->
+        <div class="container-fluid mx-3 d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#"><img src="../../assets/images/logoRW.png" alt="logoRW" width="162"
+                    height="60"></a>
+            <div class="d-flex flex-column align-items-end">
+                <img src="../../assets/icons/profile.png" alt="Account Logo" style="max-height: 50px;">
+                <span class="profile">NAME</span>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- mobile section -->
+    <button class="btn d-md-none col-12 col-md-auto" data-bs-toggle="collapse" href="#listgroup" role="button"
+        aria-expanded="false" aria-controls="listgroup"><img src="../../assets/images/cheron.svg" alt="down"
+            class="img-fluid"></button>
+
+    <div class="col-md-3">
+        <div class="card h-100 collapse d-md-none" id="listgroup">
+            <div class="card-body">
+                <div class="list-group">
+                    <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                    <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                    <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                    <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                    <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Website
+                            Management</button></a>
+                    <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Job
+                            Management</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid content">
+        <div class="row">
+            <!-- Left Column: 25% width -->
+            <div class="col-md-3 d-none d-sm-block">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                            <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                            <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                            <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                            <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Website
+                                    Management</button></a>
+                            <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Job
+                                    Management</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: 75% width -->
+            <div class="col-md-9">
+                <div class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-4"><a href="#"
+                                    style="text-decoration: underline overline blue;"><strong>Projects</strong></a>
+                            </div>
+                            <div class="col-6 col-md-4"><a href="./empproject.html"
+                                    style="text-decoration: none;"><strong>Project Details</strong></a></div>
+                            <div class="col-6 col-md-4"><a href="updateproject.html"
+                                style="text-decoration: none;"><strong>Update</strong></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <caption><strong>Project List</strong></caption>
+                        <div class="table-responsive m-1" style="max-height: 400px; overflow-y: auto;">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Project Name</strong></th>
+                                        <th><strong>Project ID</strong></th>
+                                        <th><strong>Team Name</strong></th>
+                                        <th><strong>Team ID</strong></th>
+                                        <th><strong>Start Date</strong></th>
+                                        <th><strong>End Date</strong></th>
+                                        <th><strong>Repository</strong></th>
+                                        <th><strong>Status</strong></th>
+                                        <th><strong>Update</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="projectTableBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a href="newproject.html"><button class="btn btn-secondary m-1" id="add" href="newproject.html">ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3" id="footer-control">
+        &copy; 2023 railworld-india-a62872276, All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Getting demo data
+        const demoData = [
+            {
+                "Project Name": "Project 1",
+                "Project ID": 101,
+                "Team Name": "TA1",
+                "Team ID": 201,
+                "Start Date": "2023-01-15",
+                "End Date": "2023-04-30",
+                "Repository": "https://github.com/project1",
+                "Status": "In Progress"
+            },
+            {
+                "Project Name": "Project 1",
+                "Project ID": 101,
+                "Team Name": "TB1",
+                "Team ID": 202,
+                "Start Date": "2023-02-10",
+                "End Date": "2023-05-20",
+                "Repository": "https://github.com/project2",
+                "Status": "Completed"
+            },
+            {
+                "Project Name": "Project 2",
+                "Project ID": 102,
+                "Team Name": "TC2",
+                "Team ID": 204,
+                "Start Date": "2023-03-05",
+                "End Date": "2023-06-15",
+                "Repository": "https://github.com/project3",
+                "Status": "Pending"
+            }
+        ];
+
+        function populateTable() {
+            const tbody = document.getElementById('projectTableBody');
+
+            demoData.forEach((project, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+            <td>${project["Project Name"]}</td>
+            <td>${project["Project ID"]}</td>
+            <td>${project["Team Name"]}</td>
+            <td>${project["Team ID"]}</td>
+            <td>${project["Start Date"]}</td>
+            <td>${project["End Date"]}</td>
+            <td><a href="${project["Repository"]}" target="_blank">${project["Repository"]}</a></td>
+            <td>Pending</td>
+            <td>
+                <a href="updateproject.html"><button class="btn btn-secondary m-1" id="add" href="newproject.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+</svg></button></a>
+            </td>
+        `;
+                tbody.appendChild(row);
+            });
+        }
+
+        populateTable();
+
+
+
+        //getting data from api
+        // async function fetchData() {
+        //     try {
+        //         const response = await fetch('api_url_here'); // Replace a API endpoint
+        //         const data = await response.json();
+        //         return data;
+        //     } catch (error) {
+        //         console.error('Error fetching data:', error);
+        //         return [];
+        //     }
+        // }
+        // async function populateTable() {
+        //     const tbody = document.getElementById('projectTableBody');
+        //     const data = await fetchData();
+
+        //     data.forEach((project, index) => {
+        //         const row = document.createElement('tr');
+        //         row.innerHTML = `
+        //             <td>${project.projectName}</td>
+        //             <td>${project.projectID}</td>
+        //             <td>${project.startDate}</td>
+        //             <td>${project.endDate}</td>
+        //             <td>${project.repository}</td>
+        //             <td>
+        //                 <select class="form-control">
+        //                     <option>${project.status}</option>
+        //                     <option>Ongoing</option>
+        //                     <option>Complete</option>
+        //                     <option>Pending</option>
+        //                 </select>
+        //             </td>
+        //         `;
+        //         tbody.appendChild(row);
+        //     });
+        // }
+        // populateTable();
+
+        //post data to api 
+        document.addEventListener('DOMContentLoaded', () => {
+            const saveButton = document.getElementById('Save');
+
+            // Add an event listener to the "SAVE" button
+            saveButton.addEventListener('click', async () => {
+                const tableRows = document.querySelectorAll('#projectTableBody tr');
+                const dataToSend = [];
+
+                // Loop through table rows and extract data
+                tableRows.forEach((row) => {
+                    const columns = row.getElementsByTagName('td');
+                    const rowData = {
+                        "Project Name": columns[0].textContent,
+                        "Project ID": parseInt(columns[1].textContent),
+                        "Team Name": columns[2].textContent,
+                        "Team ID": parseInt(columns[3].textContent),
+                        "Start Date": columns[4].textContent,
+                        "End Date": columns[5].textContent,
+                        "Repository": columns[6].textContent,
+                        "Status": columns[7].textContent
+                    };
+                    dataToSend.push(rowData);
+                });
+
+                try {
+                    const response = await fetch('', {  //place the a api endpoint
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(dataToSend)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+
+                    alert('Data successfully saved to the API.');
+                } catch (error) {
+                    console.error('Error saving data:', error);
+                    alert('Error saving data to the API.');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

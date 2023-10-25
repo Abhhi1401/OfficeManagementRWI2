@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Railworld India - The Best Platform for Software Developers</title>
+  <meta name="title" content="Railworld India - The Best Platform for Software Developers">
+  <meta name="description" content="This is a Railworld India Website made by Team Railworld">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/RW.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logoRW.png" width="162" height="50" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logoRW.png" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#Career" class="navbar-link" data-nav-link>Career</a>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="#Service" class="navbar-link" data-nav-link>Services</a>
+              <div class="dropdown-content">
+                <a href="./Services/IOS.html"> iOS</a>
+                <a href="./Services/AndroidDev.html">Android</a>
+                <a href="./Services/Softdev.html">Software</a>
+                <a href="./Services/WebappDev.html">Web Development 2</a>
+                <a href="./Services/AI&ML.html">AI & ML</a>
+                <a href="./Services/DataSci.html">Data Science</a>
+                <a href="./Services/BlockchainDev.html">Blockchain</a>
+              </div>
+          </li>
+
+            <li class="navbar-item">
+              <a href="./contact.html" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+            
+            <li class="navbar-item">
+              <a href="./Gallery.html" class="navbar-link" data-nav-link>Gallery</a>
+            </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <!-- 
+        - Carousel section
+      -->
+
+
+  <div class="main-slider">
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+
+        <div class="slide first">
+          <img src="./assets/images/img1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/images/img2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/images/img3.jpg" alt="">
+        </div>
+
+        <div class="navigattion-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <article>
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <p class="section-subtitle">Our Strategy</p>
+
+          <h2 class="h2 section-title">
+            What <span class="span">WE</span> do here.
+          </h2>
+
+          <p class="section-text">
+            We Create the best
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card" style="--color: 170, 75%, 41%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-1.svg" width="40" height="40" loading="lazy"
+                    alt="Online Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Our Vision</a>
+                </h3>
+
+                <p class="card-text">
+                  To be a premium-quality development solutions provider by helping both our clients succeed with
+                  agility, supporting our communities, and helping to shape our industry.
+                </p>
+
+                <!-- <span class="card-badge">7 Courses</span> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 351, 83%, 61%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-2.svg" width="40" height="40" loading="lazy"
+                    alt="Non-Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Our Mission</a>
+                </h3>
+
+                <p class="card-text">
+                  The mission of our software development company is to create innovative, reliable, and user-centric
+                  software solutions that address the needs and challenges of their clients.
+                </p>
+
+                <!-- <span class="card-badge">4 Courses</span> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Off-Campus Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Our Goal</a>
+                </h3>
+
+                <p class="card-text">
+                  Our goal at Railworld India is to help global based industry , who are looking for a complete solution
+                  for digital presence.
+                </p>
+
+                <!-- <span class="card-badge">8 Courses</span> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 42, 94%, 55%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-4.svg" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Our Path</a>
+                </h3>
+
+                <p class="card-text">
+                  Our team is comprised of diverse and passionate individuals who are driven by a shared vision of
+                  pushing the boundaries of what technology can achieve. As we progress along our path, we are committed
+                  to fostering a work culture that encourages creativity, empowers our employees, and nurtures their
+                  personal and professional growth.
+                </p>
+
+                <!-- <span class="card-badge">8 Courses</span> -->
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <div class="img-holder" style="--width: 520; --height: 370;">
+              <img src="./assets/images/about-banner.jpg" width="520" height="370" loading="lazy" alt="about banner"
+                class="img-cover">
+            </div>
+
+            <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
+              class="shape about-shape-3">
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">
+              We have Experienced Developer for <span class="span">Creative Deveopment</span> on Multiple Technologies
+            </h2>
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Expert Developer</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Development with Project based Learning</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Multiple Technologies</span>
+              </li>
+
+            </ul>
+
+            <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
+              class="shape about-shape-4">
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #Career
+      -->
+
+      <section class="section course" id="Career" aria-label="course">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Careers</p>
+
+          <h2 class="h2 section-title">Pick A Career To Get Started with Us</h2>
+
+
+          <ul class="grid-list" id="developerCriteriaList">
+
+
+          </ul>
+
+          <a href="#" class="btn has-before">
+            <span class="span">Browse more Careers</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #VIDEO
+      -->
+
+      <section class="video has-bg-image" aria-label="video"
+        style="background-image: url('./assets/images/video-bg.png')">
+        <div class="container">
+
+          <div class="video-card">
+
+            <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
+              <img src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
+                class="img-cover">
+
+              <button class="play-btn" aria-label="play video">
+                <ion-icon name="play" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+            <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
+              class="shape video-shape-1">
+
+            <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
+              class="shape video-shape-2">
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATE
+      -->
+
+      <section class="section stats" aria-label="stats">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="stats-card" style="--color: 170, 75%, 41%">
+                <h3 class="card-title">100+</h3>
+
+                <p class="card-text">Company Strength</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 351, 83%, 61%">
+                <h3 class="card-title">20+</h3>
+
+                <p class="card-text">Project Completed</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 260, 100%, 67%">
+                <h3 class="card-title">100%</h3>
+
+                <p class="card-text">Client Satisfaction Rate</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 42, 94%, 55%">
+                <h3 class="card-title">10+</h3>
+
+                <p class="card-text">Experience Team Lead</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #Service
+      -->
+
+      <section class="section blog has-bg-image" id="Service" aria-label="blog"
+        style="background-image: url('./assets/images/blog-bg.svg')">
+        <div class="container">
+
+          <p class="section-subtitle">Latest Services</p>
+
+          <h2 class="h2 section-title">Explore New Services with Railworld</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="./assets/images/Android.png" width="370" height="370" loading="lazy"
+                    alt="Become A Better Blogger: Content Planning" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="./Services/AndroidDev.html" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="./Services/AndroidDev.html" class="card-subtitle">ANDROID DEVELOPER</a>
+
+                  <h3 class="h3">
+                    <a href="./Services/AndroidDev.html" class="card-title">We Provide innovate/Creative Android/Ios Applications with fast
+                      development and smoother process with Client</a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="./assets/images/apple-logo.png" width="370" height="370" loading="lazy"
+                    alt="Become A Better Blogger: Content Planning" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="./Services/IOS.html" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="./Services/IOS.html" class="card-subtitle">IOS</a>
+
+                  <h3 class="h3">
+                    <a href="./Services/IOS.html" class="card-title">We Provide innovate/Creative Android/Ios Applications with fast
+                      development and smoother process with Client</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="./assets/images/dapp.jpeg" width="370" height="370" loading="lazy"
+                    alt="Become A Better Blogger: Content Planning" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="./Services/dAppDev.html" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="./Services/dAppDev.html" class="card-subtitle">Dapp Development Service</a>
+
+                  <h3 class="h3">
+                    <a href="./Services/dAppDev.html" class="card-title">We Provide innovate/Creative Android/Ios Applications with fast
+                      development and smoother process with Client</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="./assets/images/DS&A.jpeg" width="370" height="370" loading="lazy"
+                    alt="Become A Better Blogger: Content Planning" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="./Services/DataSci.html" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="./Services/DataSci.html" class="card-subtitle">Data Science Analytics</a>
+
+                  <h3 class="h3">
+                    <a href="./Services/DataSci.html" class="card-title">We Provide innovate/Creative Android/Ios Applications with fast
+                      development and smoother process with Client</a>
+                  </h3>                 
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="./assets/images/pwa.png" width="370" height="370" loading="lazy"
+                    alt="Become A Better Blogger: Content Planning" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="./Services/BlockchainDev.html" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="./Services/BlockchainDev.html" class="card-subtitle">Blockchain Development</a>
+
+                  <h3 class="h3">
+                    <a href="./Services/BlockchainDev.html" class="card-title">We Provide innovate/Creative Android/Ios Applications with fast
+                      development and smoother process with Client</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="./assets/images/SoftwareDev.png" width="370" height="370" loading="lazy"
+                    alt="Become A Better Blogger: Content Planning" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="./Services/Softdev.html" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="./Services/Softdev.html" class="card-subtitle">SOFTWARE DEVELOPMENT</a>
+
+                  <h3 class="h3">
+                    <a href="./Services/Softdev.html" class="card-title">Become a better software developer with using tools like standalone
+                      App, ERP, etc.
+                      Developed according to client request with smoother process and fast development.
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                  <img src="./assets/images/blog-3.jpg" width="370" height="370" loading="lazy"
+                    alt="Become A Better Blogger: Content Planning" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="./Services/WebappDev.html" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="./Services/WebappDev.html" class="card-subtitle">Web Development</a>
+
+                  <h3 class="h3">
+                    <a href="./Services/WebappDev.html" class="card-title">We develop responsive web apps on different technologies with
+                      deployment on server like AWS, GCP & AZURE.</a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/blog-shape.png" width="186" height="186" loading="lazy" alt=""
+            class="shape blog-shape">
+
+        </div>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer" id="footer1" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+
+      <div class="quote">
+        <a href="#" class="logo">
+          <img src="./assets/images/logoRW.png" width="200" height="150" alt="EduWeb logo">
+        </a>
+
+        <P>Railworld india is the fastest growing company in the software developement field with energetic and
+          enthuasiastic team. We serve our client at an affordable price with the given timeline.</P>
+      </div>
+
+
+
+
+    </div>
+    <div class="container grid-list">
+      <div class="footer-brand">
+        <div class="wrapper">
+
+
+          <a
+            href="https://www.google.com/maps/dir//Bindapur+Rd,+Uttam+Nagar+New,+Delhi,+110059/@28.6190822,77.0623398,15.69z/data=!3m1!5s0x3a28dd36ca076017:0x8a3cf6880d525980!4m8!4m7!1m0!1m5!1m1!1s0x390d04c55b904c6b:0xdfd5c926bfdf0f72!2m2!1d77.068875!2d28.6185702?entry=ttu"><span
+              class="material-symbols-outlined">
+              location_on
+            </span></a>
+          <b>Registered Office :</b>
+        </div>
+
+        <div>401, 3RD Floor, Bindapur, Uttam Nagar, New Delhi, West Delhi - 110059 India</div>
+
+
+        <div class="wrapper">
+          <span class="span"><b>Phone :</b></span>
+
+          <a href="tel:+011234567890" class="footer-link">(+91) 9319411684</a>
+        </div>
+
+        <div class="wrapper">
+          <span class="span"><b>Email:</b></span>
+
+          <a href="mailto:info@eduweb.com" class="footer-link">info@Railworld.co.in</a>
+        </div>
+
+        <div class="wrapper">
+
+
+          <a
+            href="https://www.google.com/maps/dir//Phase+V,+Udyog+Vihar,+Sector+19,+Gurugram,+Haryana+122022/@28.5047242,77.0436181,13z/data=!3m1!5s0x3a28dd36ca076017:0x8a3cf6880d525980!4m8!4m7!1m0!1m5!1m1!1s0x390d194154c22cf7:0x409982753fe0a0d4!2m2!1d77.0848179!2d28.504655?entry=ttu"><span
+              class="material-symbols-outlined">
+              location_on
+            </span></a>
+          <b>Registered Office :</b>
+        </div>
+
+        <div>744 first floor ,Udyog Vihar , Phase V ,Sector 19, Gurugram Hariyana, 122016
+          India</div>
+
+        <div class="wrapper">
+          <span class="span"><b>Phone :</b></span>
+
+          <a href="tel:+011234567890" class="footer-link">07714038148</a>
+        </div>
+
+        <div class="wrapper">
+          <span class="span"><b>Email:</b></span>
+
+          <a href="mailto:info@eduweb.com" class="footer-link">info@Railworld.co.in</a>
+        </div>
+
+
+        <div class="wrapper">
+          <a
+            href="https://www.google.com/maps/dir//Magneto+The+Mall,+NH+53,+GE+Road,+beside+Signature+Homes+2,+Labhandih,+Chhattisgarh+492001/@21.2410042,81.6429556,13z/data=!3m1!5s0x3a28dd36ca076017:0x8a3cf6880d525980!4m8!4m7!1m0!1m5!1m1!1s0x3a28dd36c9094f8d:0x9b52fe998fc169b4!2m2!1d81.6841555!2d21.2409292?entry=ttu"><span
+              class="material-symbols-outlined">
+              location_on
+            </span>
+          </a>
+          <b>Branch Office :</b>
+        </div>
+        <div>
+          SO-15,3 rd floor, Magneto offizo, Labhandih,Raipur, Chhattisgarh 492001
+          India
+        </div>
+
+
+        <div class="wrapper">
+          <span class="span"><b>Phone :</b></span>
+
+          <a href="tel:+011234567890" class="footer-link">07714038148</a>
+        </div>
+
+        <div class="wrapper">
+          <span class="span"><b>Email:</b></span>
+
+          <a href="mailto:info@eduweb.com" class="footer-link">info@Railworld.co.in</a>
+        </div>
+
+        <div class="wrapper">
+          <a
+            href="https://www.google.com/maps/dir//Doon+valley+school,+Maruti+Kunj,+Nirmal+Enclave,+Parshav+Stuti+Colony,+Gurgaon,+Bhopal,+Madhya+Pradesh+122102/@23.2774528,77.380609,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x397c69b57d8e6029:0x8e39bda166c0cc30!2m2!1d77.4217158!2d23.277379?entry=ttu"><span
+              class="material-symbols-outlined">
+              location_on
+            </span>
+          </a>
+
+          <b>Upcoming Branches :</b>
+        </div>
+        <div> Gurgaon, Bhopal </div>
+
+      </div>
+
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Online Platform</p>
+        </li>
+
+        <li>
+          <a href="#about" class="footer-link">About</a>
+        </li>
+
+        <li>
+          <a href="#Career" class="footer-link">Careers</a>
+        </li>
+
+        <li>
+          <a href="#Service" class="footer-link">Services</a>
+        </li>
+
+          
+        </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Links</p>
+        </li>
+
+          
+
+        <li>
+          <a href="./Gallery.html" class="footer-link">Gallery</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Blogs</a>
+        </li>
+
+          
+
+        <li>
+          <a href="#" class="footer-link">Sign In/Registration</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="footer-list-title">Contacts</p>
+
+        <p class="footer-list-text">
+          Enter your email address to register and contact with us
+        </p>
+
+        <form action="" class="newsletter-form">
+          <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+
+         <button type="submit" class="btn has-before">
+              <span class="span"><a href="./contact.html">Click here</a></span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+         
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100092449213118" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/railworld-india-a62872276/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/_railworldindia/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/railworldindia" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+            
+
+        </ul>
+
+      </div>
+
+    </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          © 2023 Railworld India. All Rights Reserved by <a href="#" class="copyright-link">Railworld India Pvt Ltd</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+
+</body>
+</html>

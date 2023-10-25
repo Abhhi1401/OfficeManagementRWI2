@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../emplist.css">
+
+</head>
+
+<body class="body">
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-md gradient-bg" id="nav">
+        <!-- Logo and Menu Toggle Button -->
+        <div class="container-fluid mx-3 d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#"><img src="../../assets/images/logoRW.png" alt="logoRW" width="162"
+                    height="60"></a>
+            <div class="d-flex flex-column align-items-end">
+                <img src="../../assets/icons/profile.png" alt="Account Logo" style="max-height: 50px;">
+                <span class="profile">NAME</span>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- mobile section -->
+    <button class="btn d-md-none col-12 col-md-auto" data-bs-toggle="collapse" href="#listgroup" role="button"
+        aria-expanded="false" aria-controls="listgroup"><img src="../../assets/images/cheron.svg" alt="down"
+            class="img-fluid"></button>
+
+    <div class="col-md-3">
+        <div class="card h-100 collapse d-md-none" id="listgroup">
+            <div class="card-body">
+                <div class="list-group">
+                    <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                    <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                    <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                    <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                    <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Website
+                            Management</button></a>
+                    <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Job
+                            Management</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid content">
+        <div class="row">
+            <!-- Left Column: 25% width -->
+            <div class="col-md-3 d-none d-sm-block">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                            <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                            <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                            <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                            <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Website
+                                    Management</button></a>
+                            <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Job
+                                    Management</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: 75% width -->
+            <div class="col-md-9">
+                <div class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-6"><a href="./attendance.html"
+                                    style="text-decoration: none;"><strong>Attendance</strong></a></div>
+                            <div class="col-6 col-md-6"><a href="#"
+                                    style="text-decoration: underline overline blue;"><strong>Attendance
+                                        Details</strong></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <caption><strong>Attendance Details</strong></caption>
+
+                        <div class="container mt-1">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="startDate">Name:</label>
+                                    <input type="name" id="name" class="form-control">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="startDate">Start Date:</label>
+                                    <input type="date" id="startDate" class="form-control">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="endDate">End Date:</label>
+                                    <input type="date" id="endDate" class="form-control">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="interval"><strong>Work Days:</strong></label>
+                                    <p><span id="interval">0</span> days</p>
+                                </div>
+                                <div class="col-md-2 mt-3">
+                                    <button class="btn btn-primary align-items-end" id="search">Search</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th><strong>S No.</strong></th>
+                                        <th><strong>Employee ID</strong></th>
+                                        <th><strong>Employee Name</strong></th>
+                                        <th><strong>In Time</strong></th>
+                                        <th><strong>Out Time</strong></th>
+                                        <th><strong>Percentage</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="employeedetail">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3" id="footer-control">
+        &copy; 2023 railworld-india-a62872276, All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        //working days 
+        const startDateInput = document.getElementById('startDate');
+        const endDateInput = document.getElementById('endDate');
+        const intervalElement = document.getElementById('interval');
+
+        startDateInput.addEventListener('input', updateInterval);
+        endDateInput.addEventListener('input', updateInterval);
+
+        function updateInterval() {
+            const startDate = new Date(startDateInput.value);
+            const endDate = new Date(endDateInput.value);
+
+            if (!isNaN(startDate.getTime()) && !isNaN(endDate.getTime())) {
+                let workDays = 0;
+                let currentDate = new Date(startDate);
+
+                while (currentDate <= endDate) {
+                    const dayOfWeek = currentDate.getDay();
+                    if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+                        // Exclude Sundays (0) and Saturdays (6)
+                        workDays++;
+                    }
+                    currentDate.setDate(currentDate.getDate() + 1);
+                }
+
+                intervalElement.textContent = workDays;
+            } else {
+                intervalElement.textContent = '';
+            }
+        }
+        updateInterval();
+
+
+        //send data to api
+        document.getElementById('search').addEventListener('click', postData);
+
+        async function postData() {
+            const name = document.getElementById('name').value;
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
+
+            const data = {
+                name: name,
+                startDate: startDate,
+                endDate: endDate
+            };
+
+            try {
+                const response = await fetch('', { //place api here
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                console.log(result);
+
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

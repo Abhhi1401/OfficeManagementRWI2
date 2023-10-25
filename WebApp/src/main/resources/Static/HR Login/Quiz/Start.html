@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Test - Round 1</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Add dark theme classes to the body -->
+    <style>
+        body.dark {
+            background-color: #343a40; /* Dark background color */
+            color: #FBFDF7; /* Light text color */
+        }
+
+        /* Customize other styles as needed for the dark theme */
+        /* Example: Change the background color of the header */
+        body.dark header {
+            background-color: #343a40; /* Dark background color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with Logo -->
+    <header class="text-center py-4">
+        <img src="/assets/images/logoRW.png" alt="Logo" class="img-fluid mt-4" style="max-width: 350px;">
+    </header>
+
+    <!-- Aptitude Test Section with Round 1 -->
+    <div class="container text-center mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mb-4 mt-4">Aptitude Test</h1>
+                <h2 class="mb-4 mt-4">Round 1</h2>
+                <a href="#" class="btn btn-primary btn-lg mb-4 mt-4">Start Test</a>
+
+                <!-- Add a button to toggle between themes -->
+                <button id="theme-toggle" class="btn btn-secondary btn-lg mb-4 mt-4">Toggle Theme</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-3 bg-primary text-light fixed-bottom">
+        &copy; 2023 railworld-india-a62872276, All rights reserved.
+    </footer>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        // JavaScript to toggle between themes
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeToggle = document.getElementById("theme-toggle");
+            const body = document.body;
+
+            themeToggle.addEventListener("click", function () {
+                body.classList.toggle("dark");
+            });
+        });
+    </script>
+</body>
+</html>

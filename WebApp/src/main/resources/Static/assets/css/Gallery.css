@@ -1,0 +1,186 @@
+.body{
+  background-color: #F8E8EE;
+}
+.gallerys{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 20px;
+  width: 80%;
+  margin:auto;
+  margin-bottom: 20px;
+  padding: 10px 20px 10px 20px;
+}
+ 
+ .gallerys card{
+  overflow: hidden;
+  padding-left: 30px;
+  margin: 10px;
+  align-items: center;
+  background-color: #F8E8EE;
+} 
+ 
+.gallerys card-body{
+  background-color: #F8E8EE;
+  /* align-items: center;
+  padding: auto;
+  margin: auto; */
+}
+
+
+.gallerys img{
+  height: 400px;
+  width: 700px;
+} 
+
+.textsp{
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.textsp h3{
+  text-align: center;
+}
+ /* carausel design */
+.size{
+  height: 40%;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.line{
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.line h2{
+  
+  text-align: center;
+  
+}
+
+.carousel img{
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease; 
+}
+
+
+.card h5{
+  text-align: center;
+  font-weight: 900;
+  font-size: larger;
+}
+
+
+
+@media screen and (max-width: 412px) {
+  .gallerys {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 20px;
+    width: 60%;
+    margin:auto ;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .gallerys {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 20px;
+    width: 60%;
+    margin:auto ;
+  }
+}
+
+/* footer design */
+
+@media (min-width: 400px) {
+  /* CSS for screens between 601px and 1200px in width */
+  .iframe-container iframe {
+      width: 100%;
+      height: 1610px;
+  }
+}
+
+@media (min-width: 450px) {
+  /* CSS for screens between 601px and 1200px in width */
+  .iframe-container iframe {
+      width: 100%;
+      height: 1550px;
+  }
+}
+
+@media (min-width: 481px) {
+  /* CSS for screens between 601px and 1200px in width */
+  .iframe-container iframe {
+      width: 100%;
+      height: 1450px;
+  }
+}
+
+@media (min-width: 525px) {
+  /* CSS for screens between 601px and 1200px in width */
+  .iframe-container iframe {
+      width: 100%;
+      height: 1350px;
+  }
+}
+
+
+
+@media (min-width: 625px) {
+  /* CSS for screens between 601px and 1200px in width */
+  .iframe-container iframe {
+      width: 100%;
+      height: 1150px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* CSS for screens between 601px and 1200px in width */
+  .iframe-container iframe {
+      width: 100%;
+      height: 1280px;
+  }
+}
+
+@media (min-width: 875px) {
+  /* CSS for screens with a maximum width of 600px */
+  .iframe-container {
+      max-width: 100%;
+  }
+  .iframe-container iframe {
+      width: 100%;
+      height: 1260px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* CSS for screens between 601px and 1200px in width */
+  .iframe-container iframe {
+      width: 100%;
+      height: 800px;
+  }
+}
+
+@media (min-width: 1201px) {
+  /* CSS for screens with a minimum width of 1201px */
+  .iframe-container iframe {
+      width: 100%;
+      height: 715px;
+  }
+}

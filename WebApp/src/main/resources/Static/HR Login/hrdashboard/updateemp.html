@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update employee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../emplist.css">
+</head>
+
+<body class="body">
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-expand-md gradient-bg" id="nav">
+        <!-- Logo and Menu Toggle Button -->
+        <div class="container-fluid mx-3 d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#"><img src="../../assets/images/logoRW.png" alt="logoRW" width="162"
+                    height="60"></a>
+
+            <div class="d-flex flex-column align-items-end">
+                <img src="../../assets/icons/profile.png" alt="Account Logo" style="max-height: 50px;">
+                <span class="profile">NAME</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- mobile section -->
+    <button class="btn d-md-none col-12 col-md-auto" data-bs-toggle="collapse" href="#listgroup" role="button"
+        aria-expanded="false" aria-controls="listgroup"><img src="../../assets/images/cheron.svg" alt="down"
+            class="img-fluid"></button>
+
+    <div class="col-md-3">
+        <div class="card h-100 collapse d-md-none" id="listgroup">
+            <div class="card-body">
+                <div class="list-group">
+                    <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                    <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                    <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                    <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                    <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Website
+                            Management</button></a>
+                    <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Job
+                            Management</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid content">
+        <div class="row">
+            <!-- Left Column: 25% width -->
+            <div class="col-md-3 d-none d-sm-block">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                            <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                            <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                            <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                            <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Website
+                                    Management</button></a>
+                            <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Job
+                                    Management</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: 75% width -->
+            <div class="col-md-9">
+                <div class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-4"><a href="./emplist.html"
+                                    style="text-decoration: none;"><strong>Employee list</strong></a></div>
+                            <div class="col-6 col-md-4"><a href="./addemp.html"
+                                    style="text-decoration: none;"><strong>Add</strong></a></div>
+                            <div class="col-6 col-md-4"><a href="#"
+                                    style="text-decoration: underline overline blue;"><strong>Update</strong></a></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Search Employee and Update Employee Text -->
+                        <div class="mb-3 row">
+                            <label for="searchEmployee" class="col-sm-4 col-form-label"><b>Update Employee</b></label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="searchEmployee"
+                                    placeholder="Search by Name">
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <button class="btn btn-primary" id="search"><span
+                                        class="font-weight-bold"><b>Search</b></span></button>
+                            </div>
+                        </div>
+
+                        <!-- Employee Profile Picture -->
+                        <div class="mb-3 text-center">
+                            <img src="../../assets/images/profile.png" alt="Employee Profile"
+                                class="img-fluid rounded-circle" style="max-width: 150px;" id="image">
+                        </div>
+
+                        <!-- Employee Details Form -->
+                        <form>
+                            <!-- Employee Name -->
+                            <div class="mb-3 row">
+                                <label for="employeeName" class="col-sm-4 col-form-label"><b>Employee Name</b></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="employeeName" name="employeeName"
+                                        value="John Doe" required>
+                                </div>
+                                <div class="col-sm-2">
+                                    <span class="edit-icon">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Employee ID -->
+                            <div class="mb-3 row">
+                                <label for="employeeID" class="col-sm-4 col-form-label"><b>Employee ID</b></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="employeeID" name="employeeID"
+                                        value="EMP12345" required>
+                                </div>
+                                <div class="col-sm-2">
+                                    <span class="edit-icon">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Employee Position -->
+                            <div class="mb-3 row">
+                                <label for="employeePosition" class="col-sm-4 col-form-label"><b>Position</b></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="employeePosition"
+                                        name="employeePosition" value="Manager" required>
+                                </div>
+                                <div class="col-sm-2">
+                                    <span class="edit-icon">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Contact Number -->
+                            <div class="mb-3 row">
+                                <label for="contactNumber" class="col-sm-4 col-form-label"><b>Contact Number</b></label>
+                                <div class="col-sm-6">
+                                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber"
+                                        value="123-456-7890" required>
+                                </div>
+                                <div class="col-sm-2">
+                                    <span class="edit-icon">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Email Address -->
+                            <div class="mb-3 row">
+                                <label for="emailAddress" class="col-sm-4 col-form-label"><b>Email Address</b></label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="emailAddress" name="emailAddress"
+                                        value="john.doe@example.com" required>
+                                </div>
+                                <div class="col-sm-2">
+                                    <span class="edit-icon">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Salary -->
+                            <div class="mb-3 row">
+                                <label for="salary" class="col-sm-4 col-form-label"><b>Salary</b></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="salary" name="salary" value="50000"
+                                        required>
+                                </div>
+                                <div class="col-sm-2">
+                                    <span class="edit-icon">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Photo Upload -->
+                            <div class="mb-3 row">
+                                <label for="photoUpload" class="col-sm-4 col-form-label"><b>Upload Photo</b></label>
+                                <div class="col-sm-6">
+                                    <input type="file" class="form-control" id="photoUpload" name="photoUpload">
+                                </div>
+                                <div class="col-sm-2">
+                                    <span class="edit-icon">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Update Button -->
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <button type="submit" class="btn btn-success" id="update"><b>Update</b></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3" id="footer-control">
+        &copy; 2023 railworld-india-a62872276, All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>

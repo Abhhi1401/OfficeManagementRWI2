@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Update</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../emplist.css">
+</head>
+
+<body class="body">
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-expand-md gradient-bg" id="nav">
+        <!-- Logo and Menu Toggle Button -->
+        <div class="container-fluid mx-3 d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="../../index.html"><img src="../../assets/images/logoRW.png" alt="logoRW"
+                    width="162" height="60"></a>
+
+            <div class="d-flex flex-column align-items-end">
+                <img src="../../assets/icons/profile.png" alt="Account Logo" style="max-height: 50px;">
+                <span class="profile">NAME</span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- mobile section -->
+    <button class="btn d-md-none col-12 col-md-auto" data-bs-toggle="collapse" href="#listgroup" role="button"
+        aria-expanded="false" aria-controls="listgroup"><img src="../../assets/images/cheron.svg" alt="down"
+            class="img-fluid"></button>
+
+    <div class="col-md-3">
+        <div class="card h-100 collapse d-md-none" id="listgroup">
+            <div class="card-body">
+                <div class="list-group">
+                    <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                    <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                    <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                    <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                    <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Website
+                            Management</button></a>
+                    <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Job
+                            Management</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid content">
+        <div class="row">
+            <!-- Left Column: 25% width -->
+            <div class="col-md-3 d-none d-sm-block">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                            <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                            <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                            <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                            <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Website
+                                    Management</button></a>
+                            <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Job
+                                    Management</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: 75% width -->
+            <div class="col-md-9">
+                <div class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-4"><a href="projects.html"
+                                    style="text-decoration: none;"><strong>Project</strong></a></div>
+                            <div class="col-6 col-md-4"><a href="empproject.html"
+                                    style="text-decoration: none;"><strong>Project Detail</strong></a></div>
+                            <div class="col-6 col-md-4"><a href="#"
+                                    style="text-decoration: underline overline blue; "><strong>Update</strong></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Update</h5>
+                        <form id="addemp">
+                            <!-- Project Name -->
+                            <div class="row mb-3">
+                                <label for="ProjectName" class="col-sm-4 col-form-label">Project Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="ProjectName" name="ProjectName"
+                                        required>
+                                </div>
+                            </div>
+
+                            <!-- Project ID -->
+                            <div class="row mb-3">
+                                <label for="ProjectID" class="col-sm-4 col-form-label">Project ID</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="ProjectID" name="PorjectID" required>
+                                </div>
+                            </div>
+
+                            <!-- Team Name -->
+                            <div class="row mb-3">
+                                <label for="TeamName" class="col-sm-4 col-form-label">Team Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="teamname"
+                                        name="teamname" required>
+                                </div>
+                            </div>
+
+                            <!-- Team ID -->
+                            <div class="row mb-3">
+                                <label for="TeamID" class="col-sm-4 col-form-label">Team ID</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="teamid" name="Teamid"
+                                        required>
+                                </div>
+                            </div>
+
+                            <!--Start Date-->
+                            <div class="row mb-3">
+                                <label for="StartDate" class="col-sm-4 col-form-label">Start Date</label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="startdate" name="startdata"
+                                        required>
+                                </div>
+                            </div>
+
+                            <!-- End Date -->
+                            <div class="row mb-3">
+                                <label for="EndDate" class="col-sm-4 col-form-label">End Date</label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="enddate" name="enddate" required>
+                                </div>
+                            </div>
+
+                            <!-- Photo Upload -->
+                            <div class="row mb-3">
+                                <label for="Repository" class="col-sm-4 col-form-label">Repository</label>
+                                <div class="col-sm-8">
+                                    <input type="link" class="form-control" id="repository" name="repository">
+                                </div>
+                            </div>
+
+                            
+
+                            <!-- Submit Button -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-primary" id="update">Update</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3" id="footer-control">
+        &copy; 2023 railworld-india-a62872276, All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('update').addEventListener('click', async function () {
+            // Get form data
+            const formData = new FormData(document.getElementById('addemp'));
+
+            try {
+                const response = await fetch('', {   //place api here
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json', 
+                    },
+                    body: JSON.stringify(Object.fromEntries(formData)),
+                });
+
+                if (response.ok) {
+                    // Request was successful
+                    const data = await response.json();
+                    console.log('Response:', data);
+                    // Handle success, if needed
+                } else {
+                    // Request failed
+                    console.error('Failed to update data.');
+                }
+            } catch (error) {
+                console.error('Error:', error.message);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

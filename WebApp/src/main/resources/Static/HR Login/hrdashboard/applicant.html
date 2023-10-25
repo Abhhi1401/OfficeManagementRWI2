@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applicant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../emplist.css">
+
+</head>
+
+<body class="body">
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-md gradient-bg" id="nav">
+        <!-- Logo and Menu Toggle Button -->
+        <div class="container-fluid mx-3 d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#"><img src="../../assets/images/logoRW.png" alt="logoRW" width="162"
+                    height="60"></a>
+            <div class="d-flex flex-column align-items-end">
+                <img src="../../assets/icons/profile.png" alt="Account Logo" style="max-height: 50px;">
+                <span class="profile">NAME</span>
+            </div>
+
+        </div>
+    </nav>
+    <!-- mobile section -->
+    <button class="btn d-md-none col-12 col-md-auto" data-bs-toggle="collapse" href="#listgroup" role="button"
+        aria-expanded="false" aria-controls="listgroup"><img src="../../assets/images/cheron.svg" alt="down"
+            class="img-fluid"></button>
+
+    <div class="col-md-3">
+        <div class="card h-100 collapse d-md-none" id="listgroup">
+            <div class="card-body">
+                <div class="list-group">
+                    <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                    <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                    <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                    <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                    <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Website
+                            Management</button></a>
+                    <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                            class="list-group-item list-group-item-action btn btn-secondary">Job
+                            Management</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid content">
+        <div class="row">
+            <!-- Left Column: 25% width -->
+            <div class="col-md-3 d-none d-sm-block">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="./emplist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Employee</button></a>
+                            <a href="./attendance.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Attendance</button></a>
+                            <a href="./leavelist.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Leave</button></a>
+                            <a href="./projects.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Project</button></a>
+                            <a href="./crousalimg.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Website
+                                    Management</button></a>
+                            <a href="./jobpost.html" style="text-decoration: none;"><button type="button"
+                                    class="list-group-item list-group-item-action btn btn-secondary">Job
+                                    Management</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: 75% width -->
+            <div class="col-md-9">
+                <div class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-6"><a href="./jobpost.html"
+                                    style="text-decoration: none;"><strong>Job Post</strong></a></div>
+                            <div class="col-6 col-md-6"><a href="#"
+                                    style="text-decoration: underline overline blue;"><strong>List of all
+                                        Applicant</strong></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <caption><strong>List of all Applicant</strong></caption>
+
+                        <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th><strong>S No.</strong></th>
+                                        <th><strong> Name</strong></th>
+                                        <th><strong>Contact No</strong></th>
+                                        <th><strong>Email ID</strong></th>
+                                        <th><strong>Qualification</strong></th>
+                                        <th><strong>Location</strong></th>
+                                        <th><strong>Apply Date</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="applicantlist">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3" id="footer-control">
+        &copy; 2023 railworld-india-a62872276, All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../jobmanage.js"></script>
+    <script>
+        //getting demo data
+        const jsonData = [
+            {
+                "name": "John Doe",
+                "contactNo": "123-456-7890",
+                "email": "john.doe@example.com",
+                "qualification": "Bachelor's Degree",
+                "location": "New York",
+                "applyDate": "2023-09-17"
+            },
+            {
+                "name": "Jane Smith",
+                "contactNo": "987-654-3210",
+                "email": "jane.smith@example.com",
+                "qualification": "Master's Degree",
+                "location": "Los Angeles",
+                "applyDate": "2023-09-18"
+            },
+            {
+                "name": "Bob Johnson",
+                "contactNo": "555-123-4567",
+                "email": "bob.johnson@example.com",
+                "qualification": "High School Diploma",
+                "location": "Chicago",
+                "applyDate": "2023-09-19"
+            }
+        ];
+
+        function populateTable() {
+            const tbody = document.getElementById('applicantlist');
+
+            jsonData.forEach((applicant, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+          <td>${index + 1}</td>
+          <td>${applicant.name}</td>
+          <td>${applicant.contactNo}</td>
+          <td>${applicant.email}</td>
+          <td>${applicant.qualification}</td>
+          <td>${applicant.location}</td>
+          <td>${applicant.applyDate}</td>
+      `;
+                tbody.appendChild(row);
+            });
+        }
+        populateTable();
+
+
+        //getting data by api
+        // async function fetchApplicantData() {
+        //             try {
+        //                 const response = await fetch('https://api.example.com/applicants'); // Replace with a API endpoint
+        //                 if (!response.ok) {
+        //                     throw new Error('Network response was not ok');
+        //                 }
+        //                 const data = await response.json();
+        //                 return data;
+        //             } catch (error) {
+        //                 console.error('API Error:', error);
+        //                 throw error;
+        //             }
+        //         }
+
+        //         async function populateTable() {
+        //             const tbody = document.getElementById('applicantlist');
+
+        //             try {
+        //                 const jsonData = await fetchApplicantData();
+
+        //                 jsonData.forEach((applicant, index) => {
+        //                     const row = document.createElement('tr');
+        //                     row.innerHTML = `
+        //                         <td>${index + 1}</td>
+        //                         <td>${applicant.name}</td>
+        //                         <td>${applicant.contactNo}</td>
+        //                         <td>${applicant.email}</td>
+        //                         <td>${applicant.qualification}</td>
+        //                         <td>${applicant.location}</td>
+        //                         <td>${applicant.applyDate}</td>
+        //                     `;
+        //                     tbody.appendChild(row);
+        //                 });
+        //             } catch (error) {
+        //                 console.error('Error populating table:', error);
+        //             }
+        //         }
+        //         populateTable();
+    </script>
+</body>
+
+</html>

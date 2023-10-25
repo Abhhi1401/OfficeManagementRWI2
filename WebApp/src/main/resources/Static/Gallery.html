@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary</title>
+    <link rel="stylesheet" href="./assets/css/Gallery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="body">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md" id="nav" style="background-color: #ffc107; width: auto;">
+        <!-- Logo and Menu Toggle Button -->
+        <div class="container-fluid mx-3">
+            <a class="navbar-brand" href="#"><img src="../assets/images/logoRW.png" alt="logoRW" width="162"
+                    height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarSupportedContent">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title"><img src="../assets/images/logoRW.png" alt="logoRW" width="162"
+                            height="60"></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Career</a>
+                        </li>
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="./Services/IOS.html">iOS</a></li>
+                                <li><a class="dropdown-item" href="./Services/AndroidDev.html">Android</a></li>
+                                <li><a class="dropdown-item" href="./Services/dAppDev.html">Dapp development Service</a></li>
+                                <li><a class="dropdown-item" href="./Services/Softdev.html">Software Development</a></li>
+                                <li><a class="dropdown-item" href="./Services/WebappDev.html">Web Development</a></li>
+                                <li><a class="dropdown-item" href="./Services/DataSci.html">Data Science Analystics</a></li>
+                                <li><a class="dropdown-item" href="./Services/AI&ML.html">AI-ML-Development</a></li>
+                                <li><a class="dropdown-item" href="./Services/BlockchainDev.html">Blockchain</a></li>
+                            </ul>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="/Gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Bar -->
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Body Section -->
+    <div class="size">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      
+<!-- TEaxt -->
+      <div class="textsp">
+        <h3>People & Culture</h3>
+        <h3>@ Railworld India Private Limited</h3>
+        <div>
+            <p>
+            Work and fun co-exist at Railworld india Pvt Limited . We believe that work with fun makes people happier and lively. Our team building fun activities add
+
+a bit of more pep to our people to make them energetic. We strive every day to make our corporate culture as enriching as possible.
+
+For us, happiness is a business model, and that's what truly defines people and work culture, corporate excellence, and ideals at
+
+Railworld india Pvt Limited .</p>
+            
+        </div>
+      </div>
+    <div class="line">
+    <h2>
+        Here are glimpses of the multitude of backgrounds and cultures of our diversified and highly talented people.
+    </h2>
+    </div>
+
+<!-- gallery -->
+      
+
+      <div class="container">
+        <div class="gallerys">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/RWI1.jpeg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/RWI2.jpeg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/RWI3.jpeg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/RWI4.jpeg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                    </div>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">HIRING</h5>
+              </div>
+            
+            </div>
+          
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/team1.jpeg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/RWI6.jpeg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">JOIN OUR TEAM</h5>
+              </div>
+            
+          </div>
+          
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/id1.jpeg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/id2.jpeg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">EVENTS</h5>
+              </div>
+            
+          </div>
+          
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/RWI1.jpeg" class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">ANNOUNCEMENTS</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+
+      <!-- Footer section -->
+
+    
+    <div class="iframe-container">
+      <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+        
+      
+      
+</body>
+</html>

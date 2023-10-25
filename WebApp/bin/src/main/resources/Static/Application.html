@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application Page</title>
+    <link rel="shortcut icon" href="./assets/images/RW.png" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md" id="nav" style="background-color: #ffc107; width: auto;">
+        <!-- Logo and Menu Toggle Button -->
+        <div class="container-fluid mx-3">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logoRW.png" alt="logoRW" width="162"
+                    height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarSupportedContent">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title"><img src="./assets/images/logoRW.png" alt="logoRW" width="162"
+                            height="60"></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Career</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Service</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Bar -->
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="main">
+        <h2 class="mb-4">Software Developer</h2>
+        <div class="table-responsive" id="Tabledata">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Skill Set: <span id="1"></span></td>
+                        <td>Total Experience: <span id="2"></span></td>
+                        <td>No. of Openings: <span id="3"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Job Post Date: <span id="4"></span></td>
+                        <td>Job Expiry Date: <span id="5"></span></td>
+                        <td>Domain: <span id="6"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Location: <span id="7"></span></td>
+                        <td>Job Reference No.: <span id="8"></span></td>
+                        <td>Salary Range: <span id="9"></span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB TYPE: <span id="10"></span></td>
+                        <td>Qualification: <span id="11"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-container mt-4">
+                <button class="btn btn-danger" id="Apply">APPLY NOW</button>
+                <button class="btn btn-outline-danger mx-3" id="Recommend">RECOMMEND TO FRIEND</button>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Job Description -->
+        <h1 class="mb-4">Job Description</h1>
+        <div class="overflow-auto">
+            <p class="px-3">
+                Manage multiple large scale, complex and specialised competency based customer projects with strong
+                focus on delivery responsibility and delivery excellence, including strategic planning and tactical
+                project
+                management for the projects. Develop strategies aligned with the organizations vision AND drive
+                their
+                implementation. Influence customer perception positively, contribute TO relationship management AND
+                drive
+                account farming. Ensure development & delivery OF software services & solutions IN line WITH
+                customer AND
+                investors requirements through optimal utilization OF human resources. Interface AND engage WITH
+                customers
+                at a strategic level, ensuring that NOT only the CURRENT project requirements are met but also
+                forecast
+                the needs OR issues that may arise AND devise ways TO address those proactively. Ensure that ALL
+                customer
+                feedback processes are completed ON time. Ensure programs are completed ON TIME, within budget, AND
+                within customer expectations FOR quality AND functionality. Ensure complete contract management,
+                including profitability AND other parameters across projects. Lead various organization wide activities
+                such
+                AS knowledge sharing, innovation AND process improvement. Provide thought leadership IN professional
+                networks AND contribute TO organizations brand building. Align WITH multiple units AND CROSS functional
+                teams
+                FOR creating effective value chain FOR the customers. Carry OUT regular reviews WITH various
+                stakeholders TO ensure consistent implementation OF strategies. Support AND cultivate a culture OF
+                completing
+                documentation AND reviews, particularly the ongoing AND post project knowledge management related
+                actions. Ensure
+                that going forward the best practices become a part OF the standard process. CREATE AND maintain program
+                level dashboards TO enable effective project management. Provide overall management guidance TO the
+                team.
+                Promote team WORK, motivate, mentor, develop subordinates AND manage ANY conflicts within the teams.
+                Ensure
+                that skillsets IN the team are built WITH the necessary certification. Play the role OF the Technical
+                Mentor AND Coach TO the team, sometimes working WITH many levels down, TO both assess AND develop their
+                technical capabilities.
+            </p>
+        </div>
+        <!-- Resume -->
+        <h1 class="text-left" id="Post">Post Your Resume / Registration</h1>
+        <div class="row p-4">
+            <div class="col-md-6 px-4">
+                <form action="" class="form-group" id="registrationForm">
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6 p-1">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name*"
+                                    required>
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name*" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6 p-1">
+                                <input type="text" class="form-control" id="nationality" name="location" value="India">
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <select class="form-control" id="experience" name="experience" required>
+                                    <option selected disabled>Select Experience in Years</option>
+                                    <option value="1">Less than 1 year</option>
+                                    <option value="2">More than 1 year</option>
+                                    <option value="3">5 years</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6 p-1">
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="Email (e.g. abc@gmail.com)" required>
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input type="text" class="form-control" id="qualificationDetails" name="qualifications"
+                                    placeholder="Qualifications">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6 p-1">
+                                <input type="date" class="form-control" id="dateOfBirth" name="date"
+                                    placeholder="Date of Birth">
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input type="tel" class="form-control" id="contactDetails" name="phoneNumber"
+                                    pattern="[0-9]{10}" placeholder="Contact Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6 p-1">
+                                <input type="number" class="form-control" id="passingYear" min="1900" max="2099"
+                                    step="1" placeholder="Passing Year" required>
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input type="file" class="form-control-file" id="file" name="file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#otpModal">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="otpModalLabel">Enter OTP</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="otpInput" class="form-label">OTP</label>
+                <input type="text" class="form-control" id="otpInput" placeholder="Enter OTP" pattern="[0-9]{6}" required>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-outline-success">Verify OTP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <hr>
+    <!-- Recommend to Friend -->
+    <div class="Recommend m-4" id="Friend">
+        <h1 class="mb-4">Recommend to Friend</h1>
+        <form class="form-group p-4">
+            <div class="row">
+                <div class="d-flex col-md-3 mb-3">
+                    <label for="YourName" class="form-label">Your Name*</label>
+                    <input type="email" class="form-control" id="YourName" placeholder="Your Email ID" required>
+                </div>
+                <div class="d-flex col-md-3 mb-3">
+                    <label for="FriendName" class="form-label">Your Friend Name*</label>
+                    <input type="email" class="form-control" id="FriendName" placeholder="Your Friend Email ID"
+                        required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white bg-black">
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a class="text-white" href="https://Railworld.in/">RailworldIndia.com</a>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/application.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

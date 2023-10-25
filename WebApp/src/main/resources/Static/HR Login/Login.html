@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Railworld-login page</title>
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md" id="nav" style="background-color: #ffc107; width: auto;">
+        <!-- Logo and Menu Toggle Button -->
+        <div class="container-fluid mx-3">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logoRW.png" alt="logoRW" width="162"
+                    height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarSupportedContent">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title"><img src="./assets/images/logoRW.png" alt="logoRW" width="162"
+                            height="60"></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Career</a>
+                        </li>
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Service
+                            </a>
+                            
+                                <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                    <li><a class="dropdown-item" href="./Services/IOS.html">iOS</a></li>
+                                    <li><a class="dropdown-item" href="./Services/AndroidDev.html">Android</a></li>
+                                    <li><a class="dropdown-item" href="./Services/dAppDev.html">Dapp development Service</a></li>
+                                    <li><a class="dropdown-item" href="./Services/Softdev.html">Software Development</a></li>
+                                    <li><a class="dropdown-item" href="./Services/WebappDev.html">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="./Services/DataSci.html">Data Science Analystics</a></li>
+                                    <li><a class="dropdown-item" href="./Services/AI&ML.html">AI-ML-Development</a></li>
+                                    <li><a class="dropdown-item" href="./Services/BlockchainDev.html">Blockchain</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Bar -->
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Sign in section -->
+    <div class="container my-4">
+        <div class="row row-cols-1 row-cols-md-2 g-2">
+            <!-- Login Form -->
+            <div class="col-md-6 p-3">
+                <div class="card p-4 my-3" style="margin-right: 45px; margin-left: 20px;">
+                    <h5>Welcome !</h5><br />
+                    <h2><b>Sign In</b></h2>
+                    <h2>To</h2><br />
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">User name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <div class="col-md">
+                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                <a class="offset-md-4" href="#">Forgot Password ?</a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark form-control">Login</button>
+                        <h6 class="card-subtitle my-2 text-body-secondary">Don,t have any Account</h6>
+                        <a href="">Contact to management team</a>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Image -->
+            <div class="col-md-6">
+                <div class="my-5">
+                    <div class="d-flex justify-content-center">
+                        <img src="../assets/images/course-2.jpg" class="card-img img-fluid my-5" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="iframe-container">
+        <iframe src="/footer.html" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us - Responsive Page Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="/images/news2.png"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    </head>
+    <body>
+        <!-- navbar section -->
+        <nav class="navbar navbar-expand-md" id="nav" style="background-color: #ffc107; width: auto;">
+            <!-- Logo and Menu Toggle Button -->
+            <div class="container-fluid mx-3">
+                <a class="navbar-brand" href="#"><img src="./assets/images/logoRW.png" alt="logoRW" width="162"
+                        height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarSupportedContent">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title"><img src="./assets/images/logoRW.png" alt="logoRW" width="162"
+                                height="60"></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html">Career</a>
+                            </li>
+                            <li class="nav-item mx-2 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Service
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                    <li><a class="dropdown-item" href="/Services/IOS.html">iOS</a></li>
+                                    <li><a class="dropdown-item" href="/Services/AndroidDev.html">Android</a></li>
+                                    <li><a class="dropdown-item" href="/Services/dAppDev.html">Dapp development Service</a></li>
+                                    <li><a class="dropdown-item" href="/Services/Softdev.html">Software Development</a></li>
+                                    <li><a class="dropdown-item" href="/Services/WebappDev.html">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="/Services/DataSci.html">Data Science Analystics</a></li>
+                                    <li><a class="dropdown-item" href="/Services/AI&ML.html">AI-ML-Development</a></li>
+                                    <li><a class="dropdown-item" href="/Services/BlockchainDev.html">Blockchain</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="/contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="/Gallery.html">Gallary</a>
+
+                            </li>
+                        </ul>
+    
+                        <!-- Search Bar -->
+                        <form class="d-flex" role="search">
+                            <div class="input-group">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-dark" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!-- contact section -->
+        <section>
+            <div class="container">
+                <div class="contactInfo"> 
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="./assets/icons/location.svg"></span>
+                                <span>SO-15,3 rd floor, Magneto offizo, Labhandih,<br>Raipur, Chhattisgarh 492001 India<br></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span><img src="./assets/icons/mail.svg"></span>
+                                <!-- <span>nassosanagn@gmail.com</span> -->
+                                <span><a href = "mailto:
+                                    info@Railworld.co.in">
+                                    info@Railworld.co.in</a></span>
+                            </li>
+                            <li>
+                                <span><img src="./assets/icons/phone_7135.png"></span>
+                                <span>07714038148</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="https://www.facebook.com//"><img src="./assets/icons/icons8-fb.svg"></a></li>
+                        <li><a href="https://instagram.com/_railworldindia?igshid=MzRlODBiNWFlZA=="><img src="./assets/icons/icons8-insta.svg"></a></li>
+                        <li><a href="https://twitter.com/"><img src="./assets/icons/icons8-twitter.svg"></a></li>
+                        <li><a href="https://www.linkedin.com/company/railworld-india-pvt-ltd/"><img src="./assets/icons/icons8-linked-in.svg"></a></li>
+                        
+                    </ul>
+                </div>
+                    <div class="contactForm">
+                        <h2>Send a Message</h2>
+                        <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" required>
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea required></textarea>
+                            <span>Write your message here...</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+                    
+                </section>
+                <!-- footer section -->
+                <div class="iframe-container">
+                    <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
+                </div>
+
+        <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    </body>
+</html>

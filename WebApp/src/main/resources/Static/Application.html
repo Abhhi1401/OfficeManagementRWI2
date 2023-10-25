@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application Page</title>
+    <link rel="shortcut icon" href="./assets/images/RW.png" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/Application.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md" id="nav" style="background-color: #ffc107; width: auto;">
+        <!-- Logo and Menu Toggle Button -->
+        <div class="container-fluid mx-3">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/images/logoRW.png" alt="logoRW" width="162"
+                    height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarSupportedContent">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title"><img src="./assets/images/logoRW.png" alt="logoRW" width="162"
+                            height="60"></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Career</a>
+                        </li>
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="./Services/IOS.html">iOS</a></li>
+                                <li><a class="dropdown-item" href="./Services/AndroidDev.html">Android</a></li>
+                                <li><a class="dropdown-item" href="./Services/dAppDev.html">Dapp development Service</a></li>
+                                <li><a class="dropdown-item" href="./Services/Softdev.html">Software Development</a></li>
+                                <li><a class="dropdown-item" href="./Services/WebappDev.html">Web Development</a></li>
+                                <li><a class="dropdown-item" href="./Services/DataSci.html">Data Science Analystics</a></li>
+                                <li><a class="dropdown-item" href="./Services/AI&ML.html">AI-ML-Development</a></li>
+                                <li><a class="dropdown-item" href="./Services/BlockchainDev.html">Blockchain</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./Gallery.html">Gallary</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Bar -->
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="main">
+        <h2 class="mb-4" id="1">Software Developer</h2>
+        <div class="table-responsive" id="Tabledata">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Skill Set: <span id="2"></span></td>
+                        <td>Total Experience: <span id="3"></span></td>
+                        <td>No. of Openings: <span id="4"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Job PostDate: <span id="5"></span></td>
+                        <td>Domain: <span id="6"></span></td>
+                        <td>Salary Range: <span id="7"></span></td>
+                    </tr>
+                    <tr>
+                       <td>Qualification: <span id="8"></span></td>
+                       <td>JOB TYPE: <span id="9"></span></td>                        
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-container mt-4">
+                <a href="#Post"><button class="btn btn-danger" id="Apply">APPLY NOW</button></a>
+                <a href="#Friend"><button class="btn btn-outline-danger mx-3" id="Recommend">RECOMMEND TO FRIEND</button></a>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Job Description -->
+        <h1 class="mb-4">Job Description</h1>
+        <div class="overflow-auto">
+            <p class="px-3" id="10">
+                
+            </p>
+        </div>
+        <!-- Resume -->
+        <h1 class="text-left" id="Post">Post Your Resume / Registration</h1>
+        <div class="row-md-6 p-4" >
+            <div class="col-md-6 px-4">
+                <form class="form-group" id="registrationForm" >
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6 p-1">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name*"
+                                    required>
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name*" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row"><div class="col-md-6 p-1">
+                            <input type="email" class="form-control" id="email"
+                                placeholder="Email (e.g. abc@gmail.com)" required>
+                        </div>
+
+                        <div class="col-md-6 p-1">
+                            <input type="tel" class="form-control" id="conDet" name="phoneNumber"
+                                pattern="[0-9]{10}" placeholder="Contact Number">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6 p-1">
+                                <input type="text" class="form-control" id="address" name="location" placeholder="Address">
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input type="text" class="form-control" id="qualDetails" name="qualifications"
+                                    placeholder="Qualifications">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6 p-1">
+                                <input type="date" class="form-control" id="dOB" name="date"
+                                    placeholder="Date of Birth">
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <select class="form-control" id="exp" name="experience" required>
+                                    <option selected disabled>Select Experience in Years</option>
+                                    <option value="1">Less than 1 year</option>
+                                    <option value="2">More than 1 year</option>
+                                    <option value="3">5 years</option>
+                                </select>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6 p-1">
+                                <input type="number" class="form-control" id="passYear" min="1990" max="2030"
+                                    step="1" placeholder="Passing Year" required>
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input type="file" class="form-control-file" id="resumeFile" name="file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <button type="submit" class="btn btn-danger" data-bs-target="#otpModal" id="otpbtn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Otp section -->
+    <div class="modal fade" id="otpsectionModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="otpModalLabel">Enter OTP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="otpInput" class="form-label">OTP</label>
+                        <input type="text" class="form-control" id="otpInput" placeholder="Enter OTP" pattern="[0-9]{6}" required>
+                    </div>
+                    <div id="timer">Timer: <span id="countdown"></span></div>
+                    <button id="resendButton" style="display: none;" class="btn btn-outline-secondary">Resend OTP</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success" id="verifyOTPButton">Verify OTP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Verfied section -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Verification Successful</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-outline-success">
+                    <p >Your OTP has been successfully verified.</p>
+                    <p>You can now access your account.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- Recommend to Friend -->
+    <div class="Recommend m-4" id="Friend">
+        <h1 class="mb-4">Recommend to Friend</h1>
+        <form class="form-group p-4">
+            <div class="row">
+                <div class="d-flex col-md-3 mb-3">
+                    <label for="YourName" class="form-label">Your Name*</label>
+                    <input type="email" class="form-control" id="YourName" placeholder="Your Email ID" required>
+                </div>
+                <div class="d-flex col-md-3 mb-3">
+                    <label for="FriendName" class="form-label">Your Friend Name*</label>
+                    <input type="email" class="form-control" id="FriendName" placeholder="Your Friend Email ID"
+                        required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="iframe-container">
+        <iframe src="./footer.html" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <script src="assets/js/application.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
